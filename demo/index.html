@@ -1,0 +1,49 @@
+<html>
+  <body style="padding: 20px;">
+    <input type="file" id="inputfile" multiple="false" onchange="onChangeFile(event)"><br>
+    <div style="margin-top: 10px;">
+      <button id="up">+</button>
+      <button id="down">-</button>
+      speed: <span id="speed">1</span>
+    </div>
+    <canvas style="border: 1px solid #bbbfc4;margin: 5px;margin: 20px 0;" id="screen" width="256" height="128"></canvas>
+    <table style="border: 1px solid #000;">
+      <tr>
+        <td>CONNECT4</td>
+        <td>instructions = `Q = go left;
+          E = go right;
+          W = drop a coin;
+          The coin color alternates with each play.
+          This game has no win detection.
+          `</td>
+      </tr>
+      <tr>
+        <td>
+          TETRIS
+        </td>
+        <td>
+          instructions = `W = go left;
+          E = go right;
+          R = fall faster;
+          Q = rotate piece;`
+        </td>
+      </tr>
+      <tr>
+        <td>PONG</td>
+        <td>instructions = `Player 1:
+          2 = go up;
+          Q = go down;
+          Player 2:
+          Z = go up;
+          X = go down;`</td>
+      </tr>
+      <tr>
+        <td>INVADERS</td>
+        <td>instructions = `W = start game;
+          W = shoot;
+          Q = go left;
+          E = go right;`</td>
+      </tr>
+    </table>
+  </body>
+</html>
